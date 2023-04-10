@@ -44,5 +44,10 @@ this function will call a Fibonacci series
         elif (c1 == 2 and c2 == 1):
           return lucas(n)
         else:
-           return fibonacci(n) + lucas(n) 
+           if (n==0):
+              return 0
+           elif (n==1):
+             return 1
+           else:
+            return sum_series(n-1,c1,c2) + sum_series(n-2,c1,c2) 
     
